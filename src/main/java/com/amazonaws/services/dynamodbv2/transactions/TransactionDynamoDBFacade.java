@@ -33,34 +33,64 @@ import com.amazonaws.services.dynamodbv2.model.BatchWriteItemRequest;
 import com.amazonaws.services.dynamodbv2.model.BatchWriteItemResult;
 import com.amazonaws.services.dynamodbv2.model.Condition;
 import com.amazonaws.services.dynamodbv2.model.ConditionalCheckFailedException;
+import com.amazonaws.services.dynamodbv2.model.CreateBackupRequest;
+import com.amazonaws.services.dynamodbv2.model.CreateBackupResult;
+import com.amazonaws.services.dynamodbv2.model.CreateGlobalTableRequest;
+import com.amazonaws.services.dynamodbv2.model.CreateGlobalTableResult;
 import com.amazonaws.services.dynamodbv2.model.CreateTableRequest;
 import com.amazonaws.services.dynamodbv2.model.CreateTableResult;
+import com.amazonaws.services.dynamodbv2.model.DeleteBackupRequest;
+import com.amazonaws.services.dynamodbv2.model.DeleteBackupResult;
 import com.amazonaws.services.dynamodbv2.model.DeleteItemRequest;
 import com.amazonaws.services.dynamodbv2.model.DeleteItemResult;
 import com.amazonaws.services.dynamodbv2.model.DeleteTableRequest;
 import com.amazonaws.services.dynamodbv2.model.DeleteTableResult;
+import com.amazonaws.services.dynamodbv2.model.DescribeBackupRequest;
+import com.amazonaws.services.dynamodbv2.model.DescribeBackupResult;
+import com.amazonaws.services.dynamodbv2.model.DescribeContinuousBackupsRequest;
+import com.amazonaws.services.dynamodbv2.model.DescribeContinuousBackupsResult;
+import com.amazonaws.services.dynamodbv2.model.DescribeGlobalTableRequest;
+import com.amazonaws.services.dynamodbv2.model.DescribeGlobalTableResult;
 import com.amazonaws.services.dynamodbv2.model.DescribeLimitsRequest;
 import com.amazonaws.services.dynamodbv2.model.DescribeLimitsResult;
 import com.amazonaws.services.dynamodbv2.model.DescribeTableRequest;
 import com.amazonaws.services.dynamodbv2.model.DescribeTableResult;
+import com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveRequest;
+import com.amazonaws.services.dynamodbv2.model.DescribeTimeToLiveResult;
 import com.amazonaws.services.dynamodbv2.model.ExpectedAttributeValue;
 import com.amazonaws.services.dynamodbv2.model.GetItemRequest;
 import com.amazonaws.services.dynamodbv2.model.GetItemResult;
 import com.amazonaws.services.dynamodbv2.model.KeySchemaElement;
 import com.amazonaws.services.dynamodbv2.model.KeysAndAttributes;
+import com.amazonaws.services.dynamodbv2.model.ListBackupsRequest;
+import com.amazonaws.services.dynamodbv2.model.ListBackupsResult;
+import com.amazonaws.services.dynamodbv2.model.ListGlobalTablesRequest;
+import com.amazonaws.services.dynamodbv2.model.ListGlobalTablesResult;
 import com.amazonaws.services.dynamodbv2.model.ListTablesRequest;
 import com.amazonaws.services.dynamodbv2.model.ListTablesResult;
+import com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceRequest;
+import com.amazonaws.services.dynamodbv2.model.ListTagsOfResourceResult;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.PutItemRequest;
 import com.amazonaws.services.dynamodbv2.model.PutItemResult;
 import com.amazonaws.services.dynamodbv2.model.QueryRequest;
 import com.amazonaws.services.dynamodbv2.model.QueryResult;
+import com.amazonaws.services.dynamodbv2.model.RestoreTableFromBackupRequest;
+import com.amazonaws.services.dynamodbv2.model.RestoreTableFromBackupResult;
 import com.amazonaws.services.dynamodbv2.model.ScanRequest;
 import com.amazonaws.services.dynamodbv2.model.ScanResult;
+import com.amazonaws.services.dynamodbv2.model.TagResourceRequest;
+import com.amazonaws.services.dynamodbv2.model.TagResourceResult;
+import com.amazonaws.services.dynamodbv2.model.UntagResourceRequest;
+import com.amazonaws.services.dynamodbv2.model.UntagResourceResult;
+import com.amazonaws.services.dynamodbv2.model.UpdateGlobalTableRequest;
+import com.amazonaws.services.dynamodbv2.model.UpdateGlobalTableResult;
 import com.amazonaws.services.dynamodbv2.model.UpdateItemRequest;
 import com.amazonaws.services.dynamodbv2.model.UpdateItemResult;
 import com.amazonaws.services.dynamodbv2.model.UpdateTableRequest;
 import com.amazonaws.services.dynamodbv2.model.UpdateTableResult;
+import com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveRequest;
+import com.amazonaws.services.dynamodbv2.model.UpdateTimeToLiveResult;
 import com.amazonaws.services.dynamodbv2.model.WriteRequest;
 import com.amazonaws.services.dynamodbv2.waiters.AmazonDynamoDBWaiters;
 
@@ -455,5 +485,93 @@ public class TransactionDynamoDBFacade implements AmazonDynamoDB {
 	public AmazonDynamoDBWaiters waiters() {
 		throw new UnsupportedOperationException("Use the underlying client instance instead");
 	}
+
+  @Override
+  public CreateBackupResult createBackup(
+      CreateBackupRequest createBackupRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public CreateGlobalTableResult createGlobalTable(
+      CreateGlobalTableRequest createGlobalTableRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public DeleteBackupResult deleteBackup(
+      DeleteBackupRequest deleteBackupRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public DescribeBackupResult describeBackup(
+      DescribeBackupRequest describeBackupRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public DescribeContinuousBackupsResult describeContinuousBackups(
+      DescribeContinuousBackupsRequest describeContinuousBackupsRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public DescribeGlobalTableResult describeGlobalTable(
+      DescribeGlobalTableRequest describeGlobalTableRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public DescribeTimeToLiveResult describeTimeToLive(
+      DescribeTimeToLiveRequest describeTimeToLiveRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public ListBackupsResult listBackups(ListBackupsRequest listBackupsRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public ListGlobalTablesResult listGlobalTables(
+      ListGlobalTablesRequest listGlobalTablesRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public ListTagsOfResourceResult listTagsOfResource(
+      ListTagsOfResourceRequest listTagsOfResourceRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public RestoreTableFromBackupResult restoreTableFromBackup(
+      RestoreTableFromBackupRequest restoreTableFromBackupRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public TagResourceResult tagResource(TagResourceRequest tagResourceRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public UntagResourceResult untagResource(
+      UntagResourceRequest untagResourceRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public UpdateGlobalTableResult updateGlobalTable(
+      UpdateGlobalTableRequest updateGlobalTableRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
+
+  @Override
+  public UpdateTimeToLiveResult updateTimeToLive(
+      UpdateTimeToLiveRequest updateTimeToLiveRequest) {
+    throw new UnsupportedOperationException("Use the underlying client instance instead");
+  }
 
 }
